@@ -1,0 +1,87 @@
+========================================
+  COMO COMPILAR EL MOD CON GITHUB
+  (sin instalar nada en tu PC)
+========================================
+
+PASO 1 — Crear cuenta en GitHub
+--------------------------------
+1. Entra a: https://github.com
+2. Clic en "Sign up" (Registrarse)
+3. Completa el registro (email, contraseña)
+4. Confirma el email si te lo pide
+
+
+PASO 2 — Crear un repositorio nuevo
+------------------------------------
+1. Una vez dentro de GitHub, clic en el boton verde
+   "New" o en el + arriba a la derecha -> "New repository"
+2. Repository name:  RedGhostMod
+3. Deja "Public"
+4. NO marques "Add a README"
+5. Clic en "Create repository"
+
+
+PASO 3 — Subir los archivos
+----------------------------
+Opcion A (la mas facil en el navegador):
+
+1. En la pagina del repo vacio, clic en
+   "uploading an existing file"
+2. Abre la carpeta RedGhostMod en tu PC
+3. Selecciona TODOS los archivos y carpetas de dentro
+   (build.gradle, gradlew, src, .github, etc.)
+   y arrastralos a la pagina de GitHub
+4. Abajo escribe:  primera version
+5. Clic en "Commit changes"
+
+
+IMPORTANTE: tiene que quedar asi la estructura en GitHub:
+
+  RedGhostMod/
+    .github/workflows/build.yml
+    gradle/wrapper/...
+    src/main/...
+    build.gradle
+    gradlew
+    gradlew.bat
+    settings.gradle
+    ...
+
+NO subas una carpeta "RedGhostMod" dentro de otra.
+Los archivos deben estar en la raiz del repositorio.
+
+
+PASO 4 — Esperar a que compile
+-------------------------------
+1. Arriba, clic en la pestana "Actions"
+2. Vas a ver un trabajo que se llama "Build Red Ghost Mod"
+3. Clic en el mas reciente
+4. Espera a que el circulo quede verde (puede tardar
+   5 a 15 minutos la primera vez)
+5. Si queda rojo, clic en el trabajo y copia el error
+   para pedirme ayuda
+
+
+PASO 5 — Descargar el .jar
+---------------------------
+1. Cuando el build este en verde, baja hasta
+   "Artifacts"
+2. Clic en "redghost-mod"
+3. Se descarga un ZIP
+4. Abre el ZIP: dentro esta  redghost-1.0.0.jar
+
+
+PASO 6 — Instalar en el servidor
+---------------------------------
+1. Tu servidor debe tener Forge 1.16.5-36.2.39
+2. Sube  redghost-1.0.0.jar  a la carpeta mods
+3. Reinicia el servidor
+4. En el juego:
+     /sun huevo_de_fantasma
+   o usa el huevo desde la pestana creativa "Red Ghost"
+
+
+========================================
+Si algo falla en Actions (circulo rojo),
+copia el mensaje de error y pegamelo.
+========================================

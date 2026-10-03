@@ -1,0 +1,10 @@
+modLoader="javafml"
+loaderVersion="[36,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="redghost"
+version="1.0.0"
+displayName="Red Ghost"
+description='''Añade un fantasma rojo hostil llamado Red Ghost.'''
+authors="Joaquin"
